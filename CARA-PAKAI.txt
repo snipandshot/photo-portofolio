@@ -1,0 +1,16 @@
+CARA UPDATE FOTO (otomatis)
+
+1. Masukkan foto ke folder kategori:
+     images/fashion/     images/beauty/
+     images/portrait/    images/editorial/
+2. Upload ke GitHub (Add file > Upload files).
+3. Netlify otomatis deploy ulang dalam 1-2 menit. Selesai.
+
+Tips:
+- Urutan foto = urutan nama file. Pakai 01-, 02-, 03- di depan nama.
+- Nama file jadi deskripsi foto: 01-gaun-merah-studio.jpg -> "Gaun merah studio".
+- Hapus foto = hapus file-nya di GitHub.
+- Buat folder baru (mis. images/wedding/) = otomatis muncul tombol kategori "Wedding".
+- Folder kosong tidak ditampilkan.
+- Export foto maks. sekitar 3000px sisi panjang, di bawah 5 MB.
+  Netlify otomatis mengecilkan & mengompres untuk tampilan website.
