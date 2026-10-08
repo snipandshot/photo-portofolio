@@ -1,0 +1,7 @@
+Put your exported photos in this folder, for example:
+  images/fashion-01.jpg
+  images/fashion-01-large.jpg
+
+Recommended export: JPG or WebP, 1200px on the long edge for the grid,
+2400px for the "large" version shown in the lightbox, quality ~80%.
+Keep each file under ~500 KB so the site stays fast.

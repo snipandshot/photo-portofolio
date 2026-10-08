@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Snipandshot</title>
+  <meta name="description" content="Book a shoot or send an enquiry to Your Name.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="wordmark">Snipandshot</a>
+    <p class="tagline">Fashion &amp; portrait photographer, Jakarta</p>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="nav" id="main-nav">
+      <a href="/">Portfolio</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html" aria-current="page">Contact</a>
+      <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </header>
+
+  <main class="page contact">
+    <h1>Contact</h1>
+    <div class="prose">
+      <p>For bookings, collaborations and print sales, send a message below or email <a href="mailto:hello@yourname.com"><u>hello@yourname.com</u></a>. I reply within two working days.</p>
+    </div>
+
+    <!-- Netlify Forms: the "data-netlify" attribute is all Netlify needs.
+         Submissions appear in your Netlify dashboard under Forms. -->
+    <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden-field"><label>Leave this empty <input name="bot-field"></label></p>
+
+      <label>Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>Type of shoot
+        <select name="shoot-type">
+          <option>Fashion / campaign</option>
+          <option>Editorial</option>
+          <option>Beauty</option>
+          <option>Personal portrait</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Preferred date
+        <input type="date" name="date">
+      </label>
+      <label>Message
+        <textarea name="message" required></textarea>
+      </label>
+      <button class="btn" type="submit">Send enquiry</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <nav>
+      <a href="https://instagram.com/Snipandshot" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:snipandshots@gmail.com">snipandshots@gmail.com</a>
+    </nav>
+    <p>&copy; <span id="year"></span> Snipandshot. All images are copyrighted.</p>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
